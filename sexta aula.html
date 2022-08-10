@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - aling self</title>
+    <style>
+        .flex-contanier{
+          max-width: 350px;
+          border: 1px solid black;
+          margin-bottom: 10px;
+          display: flex; 
+        }
+
+        .aling-contanier{
+            align-items: center;
+
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 25px;
+            text-align:center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+        align-self: flex-start;
+        }
+        .and{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+       
+        .auto{
+            align-self: auto;
+        }
+
+
+        .direction-column{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-contanier aling-contanier">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item and">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAaaaaaaaaa</div>
+        <div class="item stretch">AAAaaaaaaaaa</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+
+
+    <div class="flex-contanier aling-contanier">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item and">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAaaaaaaaaa</div>
+        <div class="item stretch">AAAaaaaaaaaa</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>   
+
+
+    <p>column</p>
+    
+    <div class="flex-contanier aling-contanier direction-column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier aling-contanier direction-column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div class="item and">ITEM 4</div>
+    </div>
+
+    <div class="flex-contanier aling-contanier direction-column">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAaaaaaaaaa</div>
+        <div class="item stretch">AAAaaaaaaaaa</div>
+        <div class="item stretch">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+
+</body>
+</html>
